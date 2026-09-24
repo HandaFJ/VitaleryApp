@@ -4,10 +4,12 @@
     "target": "es2023",
     "lib": ["ES2023"],
     "types": ["node"],
+    "typeRoots": ["./node_modules/@types"],
     "skipLibCheck": true,
 
-    /* Bundler mode */
-    "module": "nodenext",
+    /* Bundler mode (esnext + bundler に統一) */
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",

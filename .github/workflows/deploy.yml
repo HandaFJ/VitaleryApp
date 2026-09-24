@@ -31,6 +31,9 @@ jobs:
           deno-version: v2.x
 
       # Denoで直接ビルド実行
+      - name: Install dependencies
+        run: deno install
+        
       - name: Build with Deno
         run: deno task build
 
